@@ -1,0 +1,240 @@
+C++ Notes
+
+Context
+--------------------------------
+Algorithm -  set of instructions for the computer to process
+Machine Language - binary numbers 
+Programming languages
+Low level lnaguage - used for direct communication with computer hardware; assembly language is an example. 1 to 1 correspondence
+
+High level language - resemble human language and must be translated to binary for cpu to understand the program
+
+Compilers are needed to translate high level language to machine language
+source code -> object code
+
+Linkers are programs that are already compiled; input and outpute routines are examples
+
+Start with a CPP file with source code that's readable. Run it through a compiler where it'll turn it to object code, which is a .o file (machine language). there'll be other .o files that contain either instructions or math. The linker takes all those files and links them together in one executable file in .exe.
+
+IDE - Integrated Development Environments
+
+Components of a language
+1. Key Words - reserved words with special meaning
+2. Defined Identifiers - variables, functions
+3. Operators
+4. Punctuation
+5. Syntax
+
+Program Design Process
+1. Define problem
+2. Design algorithm
+3. Test code
+4. Debug
+5. Repeat
+
+Error Types
+1. Syntax errors
+2. Run time errors
+3. Logic errors
+
+----------------
+C++ Syntax Rules
+Need semi colon after every statement
+Example: 
+variable_one = x + another_number;
+use '=' for assignment, not equal sign
+
+Declaring a variable doesn't initialize it
+need to state data type
+Example: 
+double mpg = 26.3;
+
+Input Using cin
+Example:
+cin >> one_weight;
+
+Output using cout
+Example:
+cout << number_of_bars << "candy bars\n";
+
+This line sends two items to the monitor: value of number_of_bars and string
+
+Example:
+cout << "Total cost is $" << (price + tax);
+
+Example:
+cout << " ";
+
+use double quotes
+don't use single quotes
+
+Include Directives add library files to our programs
+These are IMPORTS
+
+Example:
+#include <iostream>
+
+Use directives include a collection of defined names
+
+Make names cin and cout available
+Example:
+using namespace std;
+
+Escape Sequences tell the compuler to treat characters in a special way
+'\' is the escape characters
+'\n' to create a new line
+Example:
+cout << "\n";
+or
+cout << endl;
+
+Other escape Sequences
+\t  --a tab
+\\--a backslash character
+\"  --a quote character
+
+Data Types for Numbers
+short, 2 bytes, Roughly -32,767 to 32,767
+int, 4 bytes, Roughly -2 billion to 2 billion
+long, 4 bytes, same as int
+float, 4 bytes, 7 digits
+long double, 10 bytes, 19 digits
+double, 8 bytes, 15 digits
+
+
+Type Char can store any character
+Examples:
+char letter = 'a';
+
+This is a string
+char letter = "a"; 
+
+Type string
+string is a class
+use double quotes around the text to store strings
+need to import this:
+
+#include <string>
+string name = "MS";
+
+
+Comments
+// single line comment
+/* multi line
+comments
+*/
+
+Booleans -> true or false
+Memory location stores true as 1 and false as 0
+
+int + int = int
+int + double = double
+module % to grab remainders
+
+All the same thing:
+++age
+age++
+age += 1
+age = age + 1
+
+
+built in functions
+
+get squared power
+s is base
+second parameter is degree
+pow(s, 2)
+
+
+
+Hierarchy of types
+long double
+double
+float
+unsigned long
+long
+unsighed int
+int
+
+Type Coercion: automatics conversion to different type
+promotion: convert to a higher type
+demotion: convert to a lower type
+
+Rules of coercion:
+1. char, short, unsigned short automatically promoted to int
+2. when operating on values of different data types, the lower one is promoted to higher one
+3. when using the = operator, the type of expression on right will be converted to type of variable of left
+
+
+Overflow and Underflow occurs when assigning a value that is either too large or too small to be held in a variable
+Variable contains value that is wrapped around set of possible values
+Will usually result in a eror message or crashing
+Example:
+If variable is displaying the maximum number, then it will start over and display the maximum smallest number. 
+
+
+Type Casting occurs automatically
+Used for manual data type conversion
+
+Useful for floating point division using ints: 
+
+double m;
+m = static_cast<double>(y2-y1)/(x2-x1);
+
+
+Example:
+char ch = 'C';
+cout << ch << " is " << static_cast<int>(ch);
+WIll display 67 because each letter in alphabet is routed to a number
+eg- 'a' = 97
+
+Older type casting ways:
+C-Style: data type name in ()
+cout << ch << "is << int(ch)
+
+
+Helpful math libraries
+cmath
+cstdlib for random number generator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

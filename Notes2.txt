@@ -1,0 +1,40 @@
+STYLE GUIDE
+
+variables -> lowercase
+constants -> UPPERCASE
+````````````````````````````````````
+const string MEASURINGSTICK(80,'-');
+````````````````````````````````````
+
+indent blocks of code
+describe your program before int Main
+the declaration section must contain a data table
+the data table states the variable or named constant
+and how its value is obtained/used
+describe what each section is doing (input, processing, output?)
+
+use double spaces
+
+Data Storage
+
+For Loops
+incrementing
+val++ -> displays, then increments
+++val -> increments then displays
+
+`````````````````````````
+int num, val = 12;
+cout << ++val // val becomes 14
+cout << val++ // val becomes 13
+cout << --num // val becomes 13
+cout << num-- // val becomes 12
+```````````````````````````
+
+
+floating point notation
+1(1/8) -> 1.001
+each place holder looks like
+1, (1/2) (1/4) (1/8)
+
+
+normalized form
